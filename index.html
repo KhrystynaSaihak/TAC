@@ -286,11 +286,34 @@
             </div>
             <div class="consultation-form__bottombar">
               <div>
-                <p>Оператор</p>
-                <p>Прізвище Ім’я</p>
+                <p class="consultation-form__bottombar-title">Оператор</p>
+                <p class="consultation-form__bottombar-name">Прізвище Ім’я</p>
               </div>
-              <div></div>
-              <div></div>
+              <div>
+                <p class="consultation-form__bottombar-title">Оцінка</p>
+                <div class="consultation-form__mark-box">
+                  <div>
+                    <svg>
+                      <use href="./images/svg/icons.svg#icon-sad"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <svg>
+                      <use href="./images/svg/icons.svg#icon-normal"></use>
+                    </svg>
+                  </div>
+                  <div class="active">
+                    <svg>
+                      <use href="./images/svg/icons.svg#icon-happy"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="consultation-form__btn-box">
+                <button class="cancel" type="button">Скасувати</button>
+                <button class="save" type="submit">Зберегти дані</button>
+                <button class="save disabled" type="submit">Зберегти дані</button>
+              </div>
             </div>
           </form>
         </div>

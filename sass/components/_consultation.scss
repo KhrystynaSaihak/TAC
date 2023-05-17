@@ -312,7 +312,7 @@ aside {
     }
   }
   .sidebar-main {
-    padding: 40px 24px;
+    padding: 40px 24px 24px 24px;
   }
 
   .consultation-form-title {
@@ -621,5 +621,105 @@ aside {
   }
 
   .consultation-form__bottombar {
+    display: flex;
+    gap: 16px;
+  }
+
+  .consultation-form__bottombar-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+
+    color: $text-color-small;
+
+    margin-bottom: 12px;
+  }
+
+  .consultation-form__bottombar-name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: $text-color-main;
+  }
+
+  .consultation-form__mark-box {
+    display: flex;
+    gap: 10px;
+    margin-top: -6px;
+    div {
+      height: 32px;
+      width: 32px;
+      border-radius: 100%;
+      background-color: $border-color-gray;
+      transition: background-color $transition-dur-and-func;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.active {
+        background: radial-gradient(circle, rgba(255, 223, 48, 1) 19%, rgba(255, 184, 46, 1) 68%);
+      }
+
+      &:hover {
+        background-color: rgb(255, 223, 48);
+      }
+
+      svg {
+        height: 21px;
+        width: 21px;
+      }
+    }
+  }
+  .consultation-form__btn-box {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    button {
+      cursor: pointer;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.19;
+      padding: 14px 16px;
+      border: 1px solid transparent;
+      border-radius: 3px;
+    }
+
+    .cancel {
+      text-decoration: underline;
+      color: $text-color-main;
+      transition: border $transition-dur-and-func;
+      &:hover {
+        border: 1px solid $btn-color-blue-hover;
+      }
+    }
+
+    .save {
+      background-color: $btn-color-blue;
+      border-radius: 3px;
+
+      color: $btn-text-color;
+      transition: background-color $transition-dur-and-func;
+
+      &:hover {
+        background-color: $btn-color-blue-hover;
+      }
+
+      &.disabled {
+        opacity: 0.3;
+
+        &:hover {
+          background-color: $btn-color-blue;
+        }
+      }
+    }
   }
 }
