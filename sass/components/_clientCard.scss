@@ -1,0 +1,571 @@
+main {
+  background: $background-color;
+}
+.client-content {
+  padding: 0px 24px 56px 24px;
+  width: 1176px;
+
+  .navigation {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 16px;
+
+    color: $text-color-small;
+
+    svg {
+      height: 8px;
+      width: 8px;
+      margin-right: 7px;
+      fill: $text-color-small;
+    }
+  }
+  .client-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .client-content-header__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    button {
+      display: flex;
+      height: 40px;
+      padding: 3px 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      font-size: 16px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      border-radius: 3px;
+      cursor: pointer;
+
+      &.hide-btn {
+        color: #fff;
+        background-color: $btn-color-green;
+        svg {
+          height: 17px;
+          width: 17px;
+          fill: #fff;
+        }
+      }
+      &.close-btn {
+        color: $btn-color-green;
+        background-color: #fff;
+        border: 1px solid $btn-color-green;
+
+        svg {
+          height: 12px;
+          width: 12px;
+          fill: $btn-color-green;
+        }
+      }
+    }
+  }
+  .client-content-header__title {
+    display: flex;
+    gap: 30px;
+
+    h1 {
+      font-size: 24px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    svg {
+      height: 24px;
+      width: 24px;
+      fill: $text-color-main;
+      border-radius: 100%;
+      background-color: $btn-bg-color2;
+    }
+  }
+
+  .tabs {
+    display: flex;
+    gap: 32px;
+
+    .tab {
+      display: flex;
+      gap: 6px;
+      justify-content: center;
+      align-items: center;
+      color: $text-color-main;
+      font-size: 18px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      &.active {
+        color: $btn-color-green;
+      }
+
+      span {
+        display: flex;
+        width: 24px;
+        height: 24px;
+
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 12px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        border-radius: 100%;
+        background-color: $violet-bg-color;
+      }
+    }
+  }
+
+  .client-content-container {
+    display: flex;
+
+    gap: 16px;
+  }
+  .client-content-container__left-side,
+  .client-content-container__right-side {
+    display: flex;
+    width: 556px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .client-content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+    box-shadow: 0px 3px 16px 0px rgba(121, 121, 121, 0.12);
+
+    .client-content-box__header {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      padding: 13px 24px;
+      align-items: center;
+      gap: 8px;
+      align-self: stretch;
+      border-radius: 16px 16px 0px 0px;
+      background: $background-blue;
+
+      color: $text-color-main;
+      font-size: 18px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+    }
+
+    .client-content-box__header-title {
+      display: flex;
+      gap: 16px;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: $main-color;
+        font-size: 16px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        cursor: pointer;
+
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: $main-color;
+        }
+      }
+    }
+
+    .client-content-box__header-arrow {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: $text-color-main;
+      }
+    }
+
+    .client-content-box__info {
+      background: #fff;
+      align-self: stretch;
+      border-radius: 16px;
+    }
+
+    .client-content-box__info-block {
+      padding: 8px 24px;
+      border-top: 1px solid $border-color-gray;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      &.tasks {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      &.subject {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      &.markers {
+        color: $btn-border-color2;
+        font-size: 16px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+      }
+      .client-content-box__info-about-client {
+        display: flex;
+
+        gap: 4px;
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+        border-radius: 16px;
+        border: $border-color;
+        background: $background-color;
+        color: $text-color-main;
+
+        border: 1px solid $border-color-gray;
+      }
+    }
+
+    .info-about-client__comment-section {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .info-about-client__comment-section-title {
+      font-size: 16px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+    }
+
+    .info-about-client__comment-section-edit-btn {
+      display: flex;
+      height: 24px;
+      padding: 3px 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      border-radius: 24px;
+      border: 1px solid $btn-border-color;
+
+      font-size: 12px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      &.contact {
+        width: 24px;
+        height: 24px;
+        padding: 3px 4px;
+      }
+    }
+
+    .info-about-client__comment-section-comment {
+      font-size: 16px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+
+      span {
+        text-decoration: underline;
+        font-weight: 700;
+      }
+    }
+
+    .info-about-client__comment-section-edit-time {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      color: $text-color-small;
+      font-size: 12px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+
+      div {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .client-content-box__info-block-header {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      .client-content-box__info-block-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: $text-color-main;
+
+        font-size: 18px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+
+        .add-contact {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          color: $main-color;
+          font-size: 16px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 120%;
+
+          svg {
+            fill: $main-color;
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+
+      .client-content-box__info-block-arrow {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: $text-color-main;
+        }
+      }
+    }
+
+    .client-content-box__info-block-row {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+    }
+
+    .client-content-box__info-block-main-col {
+      width: 200px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      color: $text-color-small;
+      font-size: 16px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+
+      &.tasks {
+        color: $text-color-main;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 120%;
+
+        span {
+          padding: 2px;
+          border-radius: 24px;
+          border: 1px solid$btn-border-color;
+          background: $btn-bg-color;
+          color: $btn-color-blue;
+          font-size: 12px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%;
+        }
+      }
+    }
+
+    .client-content-box__info-block-data-col {
+      display: flex;
+      gap: 4px;
+      align-self: center;
+      align-items: center;
+      color: $text-color-main;
+      text-align: right;
+      font-size: 16px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      max-width: 275px;
+
+      .pep {
+        padding: 2px 4px;
+        color: $text-color-orange;
+        font-size: 16px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+
+        border-radius: 8px;
+        background: rgba(247, 134, 50, 0.2);
+      }
+      .age {
+        color: $text-color-small;
+        font-size: 16px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+      }
+
+      &.phone {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 130%;
+        text-decoration-line: underline;
+      }
+
+      &.mail {
+        color: $btn-color-blue;
+        line-height: 130%;
+        text-decoration-line: underline;
+      }
+
+      &.passport {
+        font-weight: 700;
+      }
+
+      svg {
+        display: block;
+        width: 20px;
+        height: 20px;
+      }
+
+      &.tasks {
+        color: $text-color-main;
+        font-size: 16px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        max-width: 350px;
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          padding: 2px 12px;
+          border-radius: 16px;
+        }
+        .indexing {
+          background: $lilac-bg-color;
+        }
+
+        .completion {
+          background: $pink-bg-color;
+        }
+
+        .subject {
+          background: $green-bg-color;
+        }
+
+        span {
+          color: $text-color-small;
+          font-size: 14px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%;
+          text-decoration-line: underline;
+        }
+
+        svg {
+          width: 9px;
+          height: 9px;
+          fill: $text-color-main;
+        }
+      }
+    }
+
+    .client-content-box__info-block-btn-col {
+      display: flex;
+      align-self: center;
+      gap: 4px;
+      cursor: pointer;
+
+      a {
+        display: flex;
+        height: 24px;
+        padding: 3px 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        border: 1px solid $btn-border-color2;
+        background: $bg-color-gray;
+        border-radius: 24px;
+        font-size: 12px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        color: $text-color-small;
+
+        svg {
+          width: 16px;
+          height: 16px;
+          fill: $text-color-small;
+        }
+
+        &.active {
+          color: $btn-color-blue;
+          border: 1px solid $btn-border-color;
+          background: $btn-bg-color;
+          transition: background-color $transition-dur-and-func;
+
+          svg {
+            fill: $btn-color-blue;
+          }
+
+          &:hover,
+          &:focus {
+            background-color: $btn-bg-hover-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -2,8 +2,11 @@ $main-color: #4c9d11;
 
 $text-color-main: #374656;
 $text-color-small: #788392;
+$text-color-orange: #f78632;
 
 $background-color: #f8f9fa;
+$bg-color-orange: rgba(247, 134, 50, 0.2);
+$bg-color-gray: #e3e3e3;
 
 // ================================
 $btn-color-blue: #3e83c4;
@@ -11,13 +14,22 @@ $btn-color-blue-hover: #3471ab;
 $btn-color-green: #4c9d11;
 $btn-text-color: #ffffff;
 $btn-border-color: #b6caee;
+$btn-border-color2: #b2bac3;
 $btn-bg-color: #edf2f6;
+$btn-bg-color2: #ebedf2;
 $btn-bg-hover-color: #d2def4;
+
+$violet-bg-color: #4d58c1;
 $pink-bg-color: #f9ebf0;
+$lilac-bg-color: #ebecf9;
+$green-bg-color: #e3f6e6;
 $border-color-gray: #dbdbdb;
+$border-color: #dfe5ea;
 $transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 $active-tab: #4c9d11;
+
+$background-blue: #e1eefb;
 // цвета для кружков, тебе для ангуляр переменных
 
 $c1: #b9a682;
