@@ -1024,6 +1024,12 @@ main {
   align-self: stretch;
   border-radius: 16px;
 }
+.client-content .client-content-box .client-content-box__info.insurance-case {
+  background: #f8f9fa;
+}
+.client-content .client-content-box .client-content-box__info.insurance-case .client-content-box__info-block {
+  gap: 0px;
+}
 .client-content .client-content-box .client-content-box__info-block {
   padding: 8px 24px;
   border-top: 1px solid #dbdbdb;
@@ -1060,6 +1066,136 @@ main {
   background: #f8f9fa;
   color: #374656;
   border: 1px solid #dbdbdb;
+}
+.client-content .client-content-box .client-content-box__info-block.requests {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block__data {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  color: #374656;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block__data span {
+  color: #788392;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120%;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block__data .contract-info {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block__data .contract-info-data {
+  display: flex;
+  gap: 14px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--dark, #374656);
+  line-height: 130%;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block__data .contract-info-data img {
+  width: 24px;
+  height: 24px;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block__data .contract-info-data .logo {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block__data .contract-info-data div {
+  text-decoration-line: underline;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block__data .contract-info-data span {
+  font-size: 16px;
+  color: var(--gray, #788392);
+  line-height: 120%;
+  text-decoration: none;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block__more-info {
+  justify-self: center;
+  align-self: center;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block__more-info a {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block__more-info svg {
+  height: 12px;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block .comunication-block__logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block .comunication-block__sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 1px solid #b6caee;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block .comunication-block__smiley {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block .comunication-block__smiley.good {
+  background-color: #5bd07c;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block .comunication-block__smiley svg {
+  width: 18px;
+  height: 18px;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block img {
+  width: 24px;
+  height: 24px;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block svg {
+  width: 14px;
+  height: 17px;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block__status {
+  padding: 2px 8px;
+  border-radius: 16px;
+  background: rgba(244, 187, 0, 0.2);
+  color: #f2994a;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.client-content .client-content-box .client-content-box__info-block .comunication-block__status.done {
+  background: #ebf9eb;
+  color: #4c9d11;
 }
 .client-content .client-content-box .info-about-client__comment-section {
   width: 100%;
@@ -1336,4 +1472,82 @@ main {
 }
 .client-content .client-content-box .client-content-box__info-block-btn-col a.active:hover, .client-content .client-content-box .client-content-box__info-block-btn-col a.active:focus {
   background-color: #d2def4;
+}
+.client-content .client-content-box .client-content-box__insurance-case {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+}
+.client-content .client-content-box .client-content-box__insurance-case-title {
+  flex: none;
+  color: #3e83c4;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.client-content .client-content-box .client-content-box__checkbox-group {
+  display: flex;
+  gap: 16px;
+}
+.client-content .client-content-box .client-content-box__checkbox-group label {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  max-width: 125px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #374656;
+}
+.client-content .client-content-box .client-content-box__checkbox-group input[type=checkbox] {
+  position: relative;
+  margin: 0px;
+  cursor: pointer;
+}
+.client-content .client-content-box .client-content-box__checkbox-group input[type=checkbox]:hover:before {
+  content: "";
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: #b6caee;
+}
+.client-content .client-content-box .client-content-box__checkbox-group input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 1px solid;
+  border-radius: 3px;
+  border-color: #dbdbdb;
+  height: 24px;
+  width: 24px;
+  top: -4px;
+  left: 0;
+  background-color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.client-content .client-content-box .client-content-box__checkbox-group input[type=checkbox]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: -4px;
+  left: 0;
+  background: #4c9d11;
+  border-radius: 3px;
+  border-color: transparent;
+}
+.client-content .client-content-box .client-content-box__checkbox-group input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 16px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -1px;
+  left: 8px;
 }/*# sourceMappingURL=main.css.map */
