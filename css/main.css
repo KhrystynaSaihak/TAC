@@ -1550,4 +1550,345 @@ main {
   position: absolute;
   top: -1px;
   left: 8px;
+}
+
+main {
+  background: #f8f9fa;
+}
+
+.policy-info-content {
+  width: 100%;
+  padding: 24px 24px 40px 24px;
+}
+.policy-info-content .navigation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 16px;
+  color: #788392;
+}
+.policy-info-content .navigation svg {
+  height: 8px;
+  width: 8px;
+  margin-right: 7px;
+  margin-left: 7px;
+  fill: #788392;
+}
+.policy-info-content .policy-info-header {
+  margin-left: -24px;
+  margin-right: -24px;
+  margin-top: -24px;
+  padding: 24px 24px 24px 24px;
+  background-color: #eef6e8;
+}
+.policy-info-content .policy-info-header__title {
+  color: #374656;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.policy-info-content .policy-info-header__title h1 {
+  font-size: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+}
+.policy-info-content .policy-info-header__title svg {
+  height: 24px;
+  width: 24px;
+  fill: #374656;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+.policy-info-content .policy-info-header__title h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #788392;
+}
+.policy-info-content .policy-info-requests-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 7px;
+  padding: 24px 0;
+}
+.policy-info-content .policy-info-requests-section p {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  color: #374656;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.19;
+  background: #f8ebc3;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.policy-info-content .policy-info-requests-section p .notification {
+  width: 20px;
+  height: 20px;
+}
+.policy-info-content .policy-info-requests-section p .phone {
+  width: 15px;
+  height: 15px;
+}
+.policy-info-content .policy-info-requests-section p .side-arrow {
+  width: 12px;
+  height: 12px;
+  fill: #374656;
+}
+.policy-info-content .policy-info-requests-section p span {
+  font-weight: 700;
+}
+.policy-info-content .policy-info-requests-section p:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.policy-info-content .policy-main-info-section {
+  margin-bottom: 40px;
+}
+.policy-info-content .policy-main-info-section-box {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 16px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 3px 16px rgba(121, 121, 121, 0.12);
+  border-radius: 16px;
+}
+.policy-info-content .policy-main-info-section-box .policy-main-info-section__number {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: #374656;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.policy-info-content .policy-main-info-section-box .heart-risk {
+  width: 32px;
+  height: 32px;
+  padding: 7px;
+  background: #d5e3f2;
+  border-radius: 100%;
+}
+.policy-info-content .policy-main-info-section-box .policy-main-info-section__status {
+  padding: 6px 16px;
+  border-radius: 56px;
+  background: #eef6e8;
+  color: #4c9d11;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.policy-info-content .policy-main-info-section-box .policy-main-info-section__program,
+.policy-info-content .policy-main-info-section-box .policy-main-info-section__application {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.policy-info-content .policy-main-info-section-box .policy-main-info-section__program-title,
+.policy-info-content .policy-main-info-section-box .policy-main-info-section__application-title {
+  color: #788392;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.policy-info-content .policy-main-info-section-box .policy-main-info-section__program-desc,
+.policy-info-content .policy-main-info-section-box .policy-main-info-section__application-desc {
+  color: #374656;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.policy-info-content .policy-main-info-section-box .policy-main-info-section__program-desc span,
+.policy-info-content .policy-main-info-section-box .policy-main-info-section__application-desc span {
+  width: 26px;
+  height: 26px;
+  padding: 4px;
+  background-color: #f6ecfa;
+  border-radius: 100%;
+}
+.policy-info-content .policy-main-info-section-box .policy-main-info-section__program-desc svg,
+.policy-info-content .policy-main-info-section-box .policy-main-info-section__application-desc svg {
+  width: 18px;
+  height: 18px;
+}
+.policy-info-content .policy-main-info-section__indexing {
+  display: flex;
+  align-items: center;
+  padding: 3px 24px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 16px;
+  border: 1px solid #dbdbdb;
+  gap: 24px;
+  color: #b2bac3;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.policy-info-content .policy-main-info-section__indexing .indexing-option__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.policy-info-content .policy-main-info-section__indexing .indexing-option__title svg {
+  width: 18px;
+  height: 18px;
+  fill: #b2bac3;
+}
+.policy-info-content .policy-parameters-section {
+  margin-bottom: 40px;
+}
+.policy-info-content .policy-section-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #374656;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.policy-info-content .policy-section-title svg {
+  width: 20px;
+  height: 20px;
+  fill: #374656;
+}
+.policy-info-content .policy-parameters-section__box {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.policy-info-content .policy-parameters-section__about-contract,
+.policy-info-content .policy-parameters-section__term-contract {
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0px 3px 16px 0px rgba(121, 121, 121, 0.12);
+  padding: 12px 0px;
+  width: 33%;
+}
+.policy-info-content .policy-parameters-section__about-contract-title,
+.policy-info-content .policy-parameters-section__term-contract-title {
+  color: #374656;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1, 2;
+  padding: 0px 16px;
+}
+.policy-info-content .policy-parameters-section__about-contract-box,
+.policy-info-content .policy-parameters-section__term-contract-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  padding: 12px 16px;
+  border-bottom: 1px solid #dbdbdb;
+}
+.policy-info-content .policy-parameters-section__about-contract-box:last-child,
+.policy-info-content .policy-parameters-section__term-contract-box:last-child {
+  border: none;
+}
+.policy-info-content .policy-parameters-section__about-contract-row,
+.policy-info-content .policy-parameters-section__term-contract-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.policy-info-content .policy-parameters-section__about-contract-row-title,
+.policy-info-content .policy-parameters-section__term-contract-row-title {
+  color: #788392;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.policy-info-content .policy-parameters-section__about-contract-row-title.calendar,
+.policy-info-content .policy-parameters-section__term-contract-row-title.calendar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.policy-info-content .policy-parameters-section__about-contract-row-title.calendar svg,
+.policy-info-content .policy-parameters-section__term-contract-row-title.calendar svg {
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+}
+.policy-info-content .policy-parameters-section__about-contract-row-desc,
+.policy-info-content .policy-parameters-section__term-contract-row-desc {
+  color: #374656;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.policy-info-content .policy-parameters-section__about-contract-row-desc.currency,
+.policy-info-content .policy-parameters-section__term-contract-row-desc.currency {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.policy-info-content .policy-parameters-section__about-contract-row-desc.currency svg,
+.policy-info-content .policy-parameters-section__term-contract-row-desc.currency svg {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  padding: 4px;
+}
+.policy-info-content .policy-parameters-section__about-contract-row-desc.currency svg.grivna,
+.policy-info-content .policy-parameters-section__term-contract-row-desc.currency svg.grivna {
+  background-color: #d5e3f2;
+}
+.policy-info-content .policy-parameters-section__about-contract-row-desc.currency svg.usd,
+.policy-info-content .policy-parameters-section__term-contract-row-desc.currency svg.usd {
+  background-color: #ebf3e5;
+}
+.policy-info-content .policy-parameters-section__about-contract-row-desc.currency svg.euro,
+.policy-info-content .policy-parameters-section__term-contract-row-desc.currency svg.euro {
+  background-color: #f5e0f0;
+}
+.policy-info-content .policy-parameters-section__about-contract-row-desc.photo,
+.policy-info-content .policy-parameters-section__term-contract-row-desc.photo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.policy-info-content .policy-parameters-section__about-contract-row-desc.photo img,
+.policy-info-content .policy-parameters-section__term-contract-row-desc.photo img {
+  width: 24px;
+  height: 24px;
 }/*# sourceMappingURL=main.css.map */
