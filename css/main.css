@@ -1763,7 +1763,9 @@ main {
   height: 18px;
   fill: #b2bac3;
 }
-.policy-info-content .policy-parameters-section {
+.policy-info-content .policy-parameters-section,
+.policy-info-content .policy-participants-section,
+.policy-info-content .policy-versions-section {
   margin-bottom: 40px;
 }
 .policy-info-content .policy-section-title {
@@ -2052,4 +2054,51 @@ main {
 .policy-info-content .participant-risk-list .participant-risk-list__item .participant-risk-list__item-desc {
   color: #374656;
   font-size: 16px;
+}
+.policy-info-content .policy-versions-section__list,
+.policy-info-content .policy-regulations-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.policy-info-content .policy-versions-section__list .policy-versions-section__list-item,
+.policy-info-content .policy-versions-section__list .policy-regulations-section__list-item,
+.policy-info-content .policy-regulations-section__list .policy-versions-section__list-item,
+.policy-info-content .policy-regulations-section__list .policy-regulations-section__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  border-radius: 16px;
+  color: #374656;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  background: #ffffff;
+  box-shadow: 0px 3px 16px 0px rgba(121, 121, 121, 0.12);
+}
+.policy-info-content .policy-versions-section__list .policy-versions-section__list-item.title,
+.policy-info-content .policy-versions-section__list .policy-regulations-section__list-item.title,
+.policy-info-content .policy-regulations-section__list .policy-versions-section__list-item.title,
+.policy-info-content .policy-regulations-section__list .policy-regulations-section__list-item.title {
+  background: #ebedf2;
+  box-shadow: none;
+}
+.policy-info-content .policy-versions-section__list .policy-versions-section__list-item div,
+.policy-info-content .policy-versions-section__list .policy-regulations-section__list-item div,
+.policy-info-content .policy-regulations-section__list .policy-versions-section__list-item div,
+.policy-info-content .policy-regulations-section__list .policy-regulations-section__list-item div {
+  min-width: 150px;
+}
+.policy-info-content .policy-versions-section__list .policy-versions-section__list-item .date,
+.policy-info-content .policy-versions-section__list .policy-versions-section__list-item .rule,
+.policy-info-content .policy-versions-section__list .policy-regulations-section__list-item .date,
+.policy-info-content .policy-versions-section__list .policy-regulations-section__list-item .rule,
+.policy-info-content .policy-regulations-section__list .policy-versions-section__list-item .date,
+.policy-info-content .policy-regulations-section__list .policy-versions-section__list-item .rule,
+.policy-info-content .policy-regulations-section__list .policy-regulations-section__list-item .date,
+.policy-info-content .policy-regulations-section__list .policy-regulations-section__list-item .rule {
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
