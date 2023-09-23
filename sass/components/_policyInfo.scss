@@ -374,4 +374,151 @@ main {
       }
     }
   }
+
+  .policy-participants-section__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .policy-participants-section__item {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    padding: 12px 24px;
+
+    border-radius: 16px;
+    background: $btn-text-color;
+    box-shadow: 0px 3px 16px 0px rgba(121, 121, 121, 0.12);
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .participant-data {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        background-color: $border-color-gray;
+        border-radius: 100%;
+        fill: $text-color-small;
+        padding: 5px;
+      }
+
+      .participant-data__full-name {
+        color: $text-color-main;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1, 3;
+        text-decoration-line: underline;
+      }
+      .participant-data__age {
+        color: $text-color-small;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.2;
+      }
+    }
+
+    .participant-role {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      span {
+        border-radius: 100px;
+        padding: 4px 12px;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.2;
+      }
+
+      .insured {
+        color: $btn-color-blue;
+        background: $bg-color-blue2;
+      }
+
+      .beneficiary {
+        color: $text-color-small;
+        background: $bg-color-gray2;
+      }
+
+      .third-party {
+        color: $text-color-small;
+        background: $bg-color-gray3;
+      }
+
+      .insurer {
+        color: $text-color-orange5;
+        background: $bg-color-orange3;
+      }
+    }
+  }
+
+  .participant-risk-box {
+    display: flex;
+    margin-left: auto;
+  }
+  .participant-risk-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: -12px 0;
+    padding: 12px;
+    border-right: 1px solid $border-color-gray;
+    min-width: 150px;
+
+    &:last-child {
+      border: none;
+    }
+
+    .participant-risk-list__list-title {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: $text-color-main;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.2;
+
+      svg {
+        width: 14px;
+        height: 14px;
+        fill: $text-color-main;
+      }
+    }
+
+    .participant-risk-list__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.2;
+
+      .participant-risk-list__item-title {
+        color: $text-color-small;
+        font-size: 14px;
+      }
+
+      .participant-risk-list__item-desc {
+        color: $text-color-main;
+        font-size: 16px;
+      }
+    }
+  }
 }
