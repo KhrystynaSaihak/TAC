@@ -1820,14 +1820,33 @@ main {
 .policy-info-content .policy-parameters-section__term-contract-box:last-child {
   border: none;
 }
+.policy-info-content .policy-parameters-section__about-contract-box.with-col,
+.policy-info-content .policy-parameters-section__term-contract-box.with-col {
+  margin-top: 12px;
+  border-top: 1px solid #dbdbdb;
+}
 .policy-info-content .policy-parameters-section__about-contract-row,
 .policy-info-content .policy-parameters-section__term-contract-row {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
+.policy-info-content .policy-parameters-section__about-contract-row.with-col,
+.policy-info-content .policy-parameters-section__term-contract-row.with-col {
+  align-items: center;
+}
+.policy-info-content .policy-parameters-section__about-contract-row.with-col .side-arrow,
+.policy-info-content .policy-parameters-section__term-contract-row.with-col .side-arrow {
+  width: 16px;
+  height: 16px;
+  fill: #374656;
+}
+.policy-info-content .policy-parameters-section__term-contract-col {
+  margin-left: 27px;
+}
 .policy-info-content .policy-parameters-section__about-contract-row-title,
-.policy-info-content .policy-parameters-section__term-contract-row-title {
+.policy-info-content .policy-parameters-section__term-contract-row-title,
+.policy-info-content .policy-parameters-section__term-contract-col-title {
   color: #788392;
   font-family: Roboto;
   font-size: 16px;
@@ -1835,20 +1854,28 @@ main {
   font-weight: 400;
   line-height: 1.2;
 }
-.policy-info-content .policy-parameters-section__about-contract-row-title.calendar,
-.policy-info-content .policy-parameters-section__term-contract-row-title.calendar {
+.policy-info-content .policy-parameters-section__about-contract-row-title.icon,
+.policy-info-content .policy-parameters-section__term-contract-row-title.icon,
+.policy-info-content .policy-parameters-section__term-contract-col-title.icon {
   display: flex;
   align-items: center;
   gap: 6px;
 }
-.policy-info-content .policy-parameters-section__about-contract-row-title.calendar svg,
-.policy-info-content .policy-parameters-section__term-contract-row-title.calendar svg {
+.policy-info-content .policy-parameters-section__about-contract-row-title.icon.flag,
+.policy-info-content .policy-parameters-section__term-contract-row-title.icon.flag,
+.policy-info-content .policy-parameters-section__term-contract-col-title.icon.flag {
+  margin-left: -27px;
+}
+.policy-info-content .policy-parameters-section__about-contract-row-title.icon svg,
+.policy-info-content .policy-parameters-section__term-contract-row-title.icon svg,
+.policy-info-content .policy-parameters-section__term-contract-col-title.icon svg {
   width: 24px;
   height: 24px;
   padding: 2px;
 }
 .policy-info-content .policy-parameters-section__about-contract-row-desc,
-.policy-info-content .policy-parameters-section__term-contract-row-desc {
+.policy-info-content .policy-parameters-section__term-contract-row-desc,
+.policy-info-content .policy-parameters-section__term-contract-col-desc {
   color: #374656;
   font-family: Roboto;
   font-size: 16px;
@@ -1857,38 +1884,45 @@ main {
   line-height: 1.2;
 }
 .policy-info-content .policy-parameters-section__about-contract-row-desc.currency,
-.policy-info-content .policy-parameters-section__term-contract-row-desc.currency {
+.policy-info-content .policy-parameters-section__term-contract-row-desc.currency,
+.policy-info-content .policy-parameters-section__term-contract-col-desc.currency {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 .policy-info-content .policy-parameters-section__about-contract-row-desc.currency svg,
-.policy-info-content .policy-parameters-section__term-contract-row-desc.currency svg {
+.policy-info-content .policy-parameters-section__term-contract-row-desc.currency svg,
+.policy-info-content .policy-parameters-section__term-contract-col-desc.currency svg {
   width: 24px;
   height: 24px;
   border-radius: 100%;
   padding: 4px;
 }
 .policy-info-content .policy-parameters-section__about-contract-row-desc.currency svg.grivna,
-.policy-info-content .policy-parameters-section__term-contract-row-desc.currency svg.grivna {
+.policy-info-content .policy-parameters-section__term-contract-row-desc.currency svg.grivna,
+.policy-info-content .policy-parameters-section__term-contract-col-desc.currency svg.grivna {
   background-color: #d5e3f2;
 }
 .policy-info-content .policy-parameters-section__about-contract-row-desc.currency svg.usd,
-.policy-info-content .policy-parameters-section__term-contract-row-desc.currency svg.usd {
+.policy-info-content .policy-parameters-section__term-contract-row-desc.currency svg.usd,
+.policy-info-content .policy-parameters-section__term-contract-col-desc.currency svg.usd {
   background-color: #ebf3e5;
 }
 .policy-info-content .policy-parameters-section__about-contract-row-desc.currency svg.euro,
-.policy-info-content .policy-parameters-section__term-contract-row-desc.currency svg.euro {
+.policy-info-content .policy-parameters-section__term-contract-row-desc.currency svg.euro,
+.policy-info-content .policy-parameters-section__term-contract-col-desc.currency svg.euro {
   background-color: #f5e0f0;
 }
 .policy-info-content .policy-parameters-section__about-contract-row-desc.photo,
-.policy-info-content .policy-parameters-section__term-contract-row-desc.photo {
+.policy-info-content .policy-parameters-section__term-contract-row-desc.photo,
+.policy-info-content .policy-parameters-section__term-contract-col-desc.photo {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 .policy-info-content .policy-parameters-section__about-contract-row-desc.photo img,
-.policy-info-content .policy-parameters-section__term-contract-row-desc.photo img {
+.policy-info-content .policy-parameters-section__term-contract-row-desc.photo img,
+.policy-info-content .policy-parameters-section__term-contract-col-desc.photo img {
   width: 24px;
   height: 24px;
 }

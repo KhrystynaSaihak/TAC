@@ -299,6 +299,11 @@ main {
     &:last-child {
       border: none;
     }
+
+    &.with-col {
+      margin-top: 12px;
+      border-top: 1px solid $border-color-gray;
+    }
   }
 
   .policy-parameters-section__about-contract-row,
@@ -306,10 +311,24 @@ main {
     display: flex;
     width: 100%;
     justify-content: space-between;
+
+    &.with-col {
+      align-items: center;
+      .side-arrow {
+        width: 16px;
+        height: 16px;
+        fill: $text-color-main;
+      }
+    }
+  }
+
+  .policy-parameters-section__term-contract-col {
+    margin-left: 27px;
   }
 
   .policy-parameters-section__about-contract-row-title,
-  .policy-parameters-section__term-contract-row-title {
+  .policy-parameters-section__term-contract-row-title,
+  .policy-parameters-section__term-contract-col-title {
     color: $text-color-small;
 
     font-family: Roboto;
@@ -318,10 +337,14 @@ main {
     font-weight: 400;
     line-height: 1.2;
 
-    &.calendar {
+    &.icon {
       display: flex;
       align-items: center;
       gap: 6px;
+
+      &.flag {
+        margin-left: -27px;
+      }
 
       svg {
         width: 24px;
@@ -332,7 +355,8 @@ main {
   }
 
   .policy-parameters-section__about-contract-row-desc,
-  .policy-parameters-section__term-contract-row-desc {
+  .policy-parameters-section__term-contract-row-desc,
+  .policy-parameters-section__term-contract-col-desc {
     color: $text-color-main;
     font-family: Roboto;
     font-size: 16px;
